@@ -147,7 +147,7 @@ const Header = () => {
       </div>
 
       {mobileMenuOpen && (
-        <nav style={{ borderTop: "1px solid #e0cfc0", backgroundColor: "#f5ede0", padding: "8px 24px" }}>
+        <nav style={{  borderTop: "1px solid #e0cfc0", backgroundColor: "#f5ede0", padding: "8px 24px", position:"absolute", top:"100%", left:"0", right:"0" ,zIndex:"50" }}>
           {[
             { label: "Каталог",  path: "/catalog" },
             { label: "Корзина",  path: "/cart" },
