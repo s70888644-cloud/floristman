@@ -1,0 +1,94 @@
+.bouquet-section {
+  background: #fdf6ee;
+  padding: 60px 20px;
+}
+
+.bouquet-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.bouquet-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 32px;
+}
+
+.bouquet-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.bouquet-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bouquet-input {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 22px;
+  background: #fff;
+  outline: none;
+  color: #333;
+  width: 100%;
+  height: 70px;
+}
+
+.bouquet-textarea {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 22px;
+  background: #fff;
+  outline: none;
+  resize: none;
+  color: #333;
+  width: 700px;
+  height: 378px;
+}
+
+.bouquet-image-box {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 370px;   /* eniga */
+  height: 545px;  /* buyiga */
+}
+
+.bouquet-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bouquet-btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.bouquet-btn {
+  background: #e05a8a;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 60px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.bouquet-btn:hover {
+  background: #c94a78;
+}
+
+.bouquet-btn.submitted {
+  background: #22c55e;
+}

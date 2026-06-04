@@ -1,0 +1,143 @@
+/* ── FOOTER ── */
+.footer-section {
+  background: #fff;
+  padding: 3rem 1rem 2rem;
+}
+
+.footer-inner {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+/* ── GRID ── */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 3rem;
+}
+
+/* ── LOGO ── */
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.footer-logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+/* ── KARTA ── */
+.footer-card {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.footer-card-img {
+  width: 100%;
+  height: 358px;
+  overflow: hidden;
+  background: #f0e0d0;
+}
+
+.footer-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── KONTAKTLAR ── */
+.footer-contacts {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #e5d5c5;
+}
+
+.footer-contacts-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.footer-contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-contact-link:hover { color: #ec4899; }
+
+/* ── SOCIAL ── */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-social-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid #e8a598;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #e8735a;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.footer-social-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-social-btn:hover {
+  background: #e8735a;
+  color: #fff;
+}
+
+/* ── COPYRIGHT ── */
+.footer-copyright {
+  font-size: 13px;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-card-img {
+    height: 150px;
+  }
+}

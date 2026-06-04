@@ -1,0 +1,50 @@
+/* Font (optional lekin tavsiya qilaman) */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.delivery {
+  height: 500px;
+  background-image: url("/public/dostavka.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.delivery_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  font-weight: 600;
+  color: #2d2d2d;
+
+  margin-bottom: 20px;
+}
+
+.text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #444;
+
+  max-width: 600px;
+}

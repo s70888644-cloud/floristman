@@ -1,0 +1,79 @@
+/* ===== HERO — 3 betda bir xil ===== */
+.catalog-hero,
+.product-hero {
+  position: relative;
+  min-height: 420px;
+  background-color: #fdf6f0;
+  background-image: url("../assets/images/header-gull.png");
+  background-size: 62% auto;
+  background-repeat: no-repeat;
+  background-position: right top;
+  display: flex;
+  align-items: flex-end;
+  padding: 48px 70px;
+}
+
+.catalog-hero::before,
+.product-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+}
+
+/* CATALOG HERO content */
+.catalog-hero__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.catalog-hero__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.catalog-hero__breadcrumb {
+  font-size: 13px;
+  color: #666;
+}
+
+.catalog-hero__breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+.catalog-hero__breadcrumb a:hover {
+  color: #e05478;
+}
+
+/* PRODUCT HERO content */
+.product-hero__content {
+  position: relative;
+  z-index: 2;
+}
+
+.product-hero__title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  max-width: 520px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .catalog-hero,
+  .product-hero {
+    background-size: 100% auto;
+    padding: 30px;
+    min-height: 300px;
+  }
+  .catalog-hero__title { font-size: 36px; }
+  .product-hero__title { font-size: 28px; }
+}
